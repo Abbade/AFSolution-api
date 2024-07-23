@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  afsolution.api:
+    image: ${DOCKER_REGISTRY-}afsolutionapi
+    build:
+      context: .
+      dockerfile: AFSolution.Api/Dockerfile
